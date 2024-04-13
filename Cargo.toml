@@ -1,6 +1,7 @@
 [package]
 name = "vanilla-wasm-nutrient-calc-example"
 version = "0.0.0"
+edition = "2021"
 
 [dependencies]
 console_error_panic_hook = "0.1"
