@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Macros calc</title>
+
+    <base data-trunk-public-url/>
+</head>
+<body>
+    <h1>Macros calc</h1>
+
+    <table border=1>
+        <tr>
+            <th>Food</th>
+            <th>Weight, g</th>
+        </tr>
+        <tr>
+            <td>Carrot</td>
+            <td><input data-nutrients="kcal:35,protein:1.3,fat:0.1,carbs:6.9" type="number" value="100"></td>
+        </tr>
+        <tr>
+            <td>Avocado</td>
+            <td><input data-nutrients="kcal:212,protein:2,fat:20,carbs:1.8" type="number" value="100"></td>
+        </tr>
+    </table>
+
+    <h2>Totals</h2>
+    <table border=1>
+        <tr>
+            <th>Energy, kCal</th>
+            <th>Protein, g</th>
+            <th>Fat, g</th>
+            <th>Carbs, g</th>
+        </tr>
+        <tr>
+            <td data-totals="kcal"></td>
+            <td data-totals="protein"></td>
+            <td data-totals="fat"></td>
+            <td data-totals="carbs"></td>
+        </tr>
+    </table>
+
+    <link data-trunk rel="rust" href="Cargo.toml" data-wasm-opt="z" data-bin="vanilla-example"/>
+</body>
+</html>
